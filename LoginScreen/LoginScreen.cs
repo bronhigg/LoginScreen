@@ -20,7 +20,7 @@ namespace LoginScreen
         {
             InitializeComponent();
         }
-
+        //Button Click
         private void loginButton_Click(object sender, EventArgs e)
         {
             if (usernameText.Text == username && passwordText.Text == password)
