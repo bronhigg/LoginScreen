@@ -25,11 +25,17 @@ namespace LoginScreen
         {
             if (usernameText.Text == username && passwordText.Text == password)
             {
-                this.Controls.Add(hp);
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
+                HomePage hp = new HomePage();
                 f.Controls.Add(hp);
+                hp.Location = new Point((f.Width - hp.Width) / 2, (f.Height - hp.Height) / 2);
             }
+            else 
+            {
+                label1.Text = "Login information incorrect";
+            }
+
         }
     }
 }

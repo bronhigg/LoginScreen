@@ -17,13 +17,11 @@ namespace LoginScreen
         public Form1()
         {
             InitializeComponent();
-            HomePage hp = new HomePage();
-            this.Controls.Add(hp);
+            LoginScreen ls = new LoginScreen();
+            this.Controls.Add(ls);
+            ls.Location = new Point(this.Width - ls.Width / 2, (this.Height - ls.Height) / 2);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
     }
 }
