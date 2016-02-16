@@ -37,9 +37,8 @@
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Location = new System.Drawing.Point(108, 94);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(83, 13);
+            this.welcomeLabel.Size = new System.Drawing.Size(0, 13);
             this.welcomeLabel.TabIndex = 0;
-            this.welcomeLabel.Text = "Welcome Back ";
             // 
             // logoutButton
             // 
@@ -49,6 +48,7 @@
             this.logoutButton.TabIndex = 1;
             this.logoutButton.Text = "Log Out";
             this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // HomePage
             // 

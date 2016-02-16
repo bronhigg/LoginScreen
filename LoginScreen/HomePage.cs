@@ -15,6 +15,14 @@ namespace LoginScreen
         public HomePage()
         {
             InitializeComponent();
+            welcomeLabel.Text = "Welcome back Bronson";
+        }
+
+        
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            
+            Application.Exit();
         }
     }
 }
