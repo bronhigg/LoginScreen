@@ -27,15 +27,24 @@ namespace LoginScreen
             {
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
+                
                 HomePage hp = new HomePage();
                 f.Controls.Add(hp);
+                
                 hp.Location = new Point((f.Width - hp.Width) / 2, (f.Height - hp.Height) / 2);
             }
             else 
             {
                 label1.Text = "Login information incorrect";
+                usernameText.Text = String.Empty;
+                passwordText.Text = String.Empty;
             }
 
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

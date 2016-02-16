@@ -30,6 +30,7 @@
         {
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // welcomeLabel
@@ -50,11 +51,23 @@
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.Red;
+            this.exitButton.Location = new System.Drawing.Point(279, 0);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(18, 19);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "X";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.welcomeLabel);
             this.Name = "HomePage";
@@ -68,5 +81,6 @@
 
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }

@@ -19,7 +19,7 @@ namespace LoginScreen
             InitializeComponent();
             LoginScreen ls = new LoginScreen();
             this.Controls.Add(ls);
-            ls.Location = new Point(this.Width - ls.Width / 2, (this.Height - ls.Height) / 2);
+            
         }
 
       
