@@ -19,7 +19,8 @@ namespace LoginScreen
             InitializeComponent();
             LoginScreen ls = new LoginScreen();
             this.Controls.Add(ls);
-            
+           
+
         }
 
       

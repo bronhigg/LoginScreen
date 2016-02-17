@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(126, 284);
+            this.label1.Location = new System.Drawing.Point(126, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 11;
@@ -48,7 +48,7 @@
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(244, 313);
+            this.loginButton.Location = new System.Drawing.Point(95, 285);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(94, 26);
             this.loginButton.TabIndex = 10;
@@ -58,14 +58,17 @@
             // 
             // passwordText
             // 
-            this.passwordText.Location = new System.Drawing.Point(244, 221);
+            this.passwordText.BackColor = System.Drawing.Color.White;
+            this.passwordText.Location = new System.Drawing.Point(164, 197);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(94, 20);
             this.passwordText.TabIndex = 9;
+            this.passwordText.UseSystemPasswordChar = true;
             // 
             // usernameText
             // 
-            this.usernameText.Location = new System.Drawing.Point(244, 141);
+            this.usernameText.BackColor = System.Drawing.Color.White;
+            this.usernameText.Location = new System.Drawing.Point(164, 101);
             this.usernameText.Name = "usernameText";
             this.usernameText.Size = new System.Drawing.Size(94, 20);
             this.usernameText.TabIndex = 8;
@@ -74,7 +77,7 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(126, 221);
+            this.passwordLabel.Location = new System.Drawing.Point(58, 197);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 7;
@@ -84,7 +87,7 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.ForeColor = System.Drawing.Color.White;
-            this.usernameLabel.Location = new System.Drawing.Point(126, 141);
+            this.usernameLabel.Location = new System.Drawing.Point(58, 101);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(55, 13);
             this.usernameLabel.TabIndex = 6;
@@ -93,7 +96,7 @@
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.Red;
-            this.exitButton.Location = new System.Drawing.Point(482, 0);
+            this.exitButton.Location = new System.Drawing.Point(329, 0);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(18, 19);
             this.exitButton.TabIndex = 12;
@@ -114,7 +117,7 @@
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
             this.Name = "LoginScreen";
-            this.Size = new System.Drawing.Size(500, 500);
+            this.Size = new System.Drawing.Size(350, 350);
             this.ResumeLayout(false);
             this.PerformLayout();
 
