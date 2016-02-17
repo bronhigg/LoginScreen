@@ -68,6 +68,7 @@
             // usernameText
             // 
             this.usernameText.BackColor = System.Drawing.Color.White;
+            this.usernameText.ForeColor = System.Drawing.Color.Black;
             this.usernameText.Location = new System.Drawing.Point(164, 101);
             this.usernameText.Name = "usernameText";
             this.usernameText.Size = new System.Drawing.Size(94, 20);
